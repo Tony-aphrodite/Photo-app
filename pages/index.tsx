@@ -216,7 +216,7 @@ const CustomerUploadPage: React.FC = () => {
               <div className="container-lg mx-auto">
                 <div className="text-center mb-2xl">
                   <h2 className="heading-2 mb-md">Next-Gen Capabilities</h2>
-                  <p className="text-large text-secondary">Revolutionary technology that pushes the boundaries of what's possible</p>
+                  <p className="text-large text-secondary">Revolutionary technology that pushes the boundaries of what&apos;s possible</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-xl">

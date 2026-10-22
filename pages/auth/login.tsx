@@ -164,7 +164,7 @@ export default function Login() {
               </div>
               
               <div className="register-section">
-                <p>Don't have an account?</p>
+                <p>Don&apos;t have an account?</p>
                 <button
                   onClick={handleRegisterClick}
                   className="register-link"
