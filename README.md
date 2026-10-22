@@ -1,5 +1,7 @@
 # 🎨 PhotoAI Pro - AI-Powered Photo Processing App
 
+[![CI](https://github.com/Tony-aphrodite/Photo-app/actions/workflows/ci.yml/badge.svg)](https://github.com/Tony-aphrodite/Photo-app/actions/workflows/ci.yml)
+
 A stunning, modern photo processing application built with Next.js, TypeScript, and Shopify Polaris with beautiful gradients and glass morphism design.
 
 ## ✨ Features

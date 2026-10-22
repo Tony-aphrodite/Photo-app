@@ -3,7 +3,8 @@ import Head from 'next/head';
 import { CustomerProfileForm } from '@/components/CustomerProfileForm';
 import { BodyMeasurementsForm } from '@/components/BodyMeasurementsForm';
 import { useRouter } from 'next/router';
-import { CustomerData, BodyMeasurementsData, SizeRecommendation } from '@/types';
+import { SizeRecommendation } from '@/types';
+import type { CustomerData, BodyMeasurementsData } from '@/lib/db';
 
 const CustomerProfilePage: React.FC = () => {
   const router = useRouter();
@@ -199,10 +200,7 @@ const CustomerProfilePage: React.FC = () => {
                 <CustomerProfileForm
                   customerEmail={customerEmail}
                   existingData={customerData}
-                  onSave={(data) => {
-                    setCustomerData(data);
-                    fetchCustomerData(customerEmail);
-                  }}
+                  onSave={() => fetchCustomerData(customerEmail)}
                 />
               )}
 
@@ -210,10 +208,7 @@ const CustomerProfilePage: React.FC = () => {
                 <BodyMeasurementsForm
                   customerEmail={customerEmail}
                   existingData={measurementsData}
-                  onSave={(data) => {
-                    setMeasurementsData(data);
-                    fetchCustomerData(customerEmail);
-                  }}
+                  onSave={() => fetchCustomerData(customerEmail)}
                 />
               )}
 

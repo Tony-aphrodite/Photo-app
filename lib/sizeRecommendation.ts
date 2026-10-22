@@ -334,7 +334,12 @@ export const sizeRecommendationService = new SizeRecommendationService()
 
 // Helper function to initialize default size charts
 export async function initializeDefaultSizeCharts(): Promise<void> {
-  const defaultCharts = [
+  const defaultCharts: {
+    brand: string
+    collection: string | null
+    productType: string
+    sizes: Record<string, Record<string, [number, number]>>
+  }[] = [
     {
       brand: 'Generic',
       collection: null,

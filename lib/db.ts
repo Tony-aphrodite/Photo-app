@@ -144,7 +144,7 @@ export type SizeChartData = {
 
 export type CreateSizeChartData = {
   brand: string
-  collection?: string
+  collection?: string | null
   productType: string
   sizes: any
   isActive?: boolean

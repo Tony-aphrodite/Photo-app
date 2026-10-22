@@ -52,7 +52,7 @@ export const CustomerProfileForm: React.FC<CustomerProfileFormProps> = ({
 
   const handleInputChange = (
     field: keyof CreateCustomerData,
-    value: string | number | Date
+    value: string | number | Date | undefined
   ) => {
     setFormData(prev => ({
       ...prev,
